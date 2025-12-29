@@ -1,0 +1,32 @@
+{
+  "name": "your-vendor/server-firebase-messaging-connector",
+  "description": "A Laravel package to integrate your server with Firebase Cloud Messaging (FCM).",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Your Name",
+      "email": "you@example.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "guzzlehttp/guzzle": "^7.0",
+    "illuminate/support": "^10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "YourVendor\\ServerFirebaseMessagingConnector\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "YourVendor\\ServerFirebaseMessagingConnector\\FCMServiceProvider"
+      ],
+      "aliases": {
+        "FCMConnector": "YourVendor\\ServerFirebaseMessagingConnector\\Facades\\FCMConnector"
+      }
+    }
+  }
+}
